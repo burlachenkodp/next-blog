@@ -9,9 +9,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>hi</h1>
-      </main>
+      <div className="my-12 text-lg font-medium">
+        <h2>hi</h2>
+        {/* <Message/> */}
+      </div>
     </div>
   );
 }
