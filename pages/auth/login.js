@@ -14,7 +14,6 @@ export default function Login() {
   const GoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
-      console.log("login succes>>>", result);
       route.push("/");
     } catch (error) {
       console.log(error);
@@ -24,7 +23,7 @@ export default function Login() {
     if (user) {
       route.push("/");
     } else {
-        console.log('login');
+        console.log('error');
     }
   }, [user]);
 
